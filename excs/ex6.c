@@ -5,7 +5,7 @@
 
 void crescente(int *);
 void decrescente(int *);
-
+void printa(int*, int);
 
 
 int main() {
@@ -35,15 +35,15 @@ if (x == 1){
   }
   
 
-
-
-
-
-  
 return 0;
 
 
-  
+}
+
+void printa(int *v, int tama){
+    for (int i=0;i<tama;i++){
+        printf("%d ",*(v+i));
+    } 
 }
 
 void crescente(int *v){
@@ -59,9 +59,7 @@ for (int x = 0; x < tam; x++){
     	}
     }
   
-for (int i=0; i<tam; i++){
-printf("%d ",*(v+i));
-}   
+printa(v,tam);
 }
 
 void decrescente(int *v){
@@ -76,7 +74,6 @@ for (int x = 0; x < tam; x++){
     	}
     }
  
-for (int i=0; i<tam; i++){
-printf("%d ",*(v + i));
-}    
+printa(v,tam);
+
 }
