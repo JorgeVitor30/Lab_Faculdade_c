@@ -33,7 +33,7 @@ int main(){
     return 0;
 }
 
-
+ 
 void preencherVetor
 (int *v, int inicio , int fim){
     for(int i = 0; i < fim; i++){
