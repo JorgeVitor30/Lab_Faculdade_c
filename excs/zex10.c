@@ -23,8 +23,8 @@ int main(){
         exit(1);
     }
     
-    v = realloc(v, qtd - TAM);
-    preencherVetor(v, TAM, qtd - TAM);
+    v = realloc(v, abs(TAM - qtd));
+    preencherVetor(v, TAM, qtd );
     printaVetor(v, TAM + (qtd - TAM));
     
     printf("%d",TAM + qtd);
