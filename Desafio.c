@@ -15,7 +15,7 @@ int main () {
             y = pow(2.0,rand() % 8);
             x = x | y;
             printf("x: %hhu\ny: %hhu\n",x, y);
-            if (x==255) puts("\nArmarios cheios.");
+            if (x==255) puts("\nArmarios FULL.");
             break;
         case 2:
             puts("Digite o numero do armario entre 0 e 7.");
@@ -25,7 +25,7 @@ int main () {
             printf("x: %hhu",x);
             break;
         case 3:
-        puts("fechando programa.");
+        puts("EXIT programa.");
             break;    
         default:
         puts("Valor digitado nao e valido.");
